@@ -116,7 +116,11 @@ justify-content: space-around;}
     height: 225px;}
 
     .sam-item:nth-child(n+3)
-    {background-color:#EBAD51;} 
+    {background-color:#EBAD51;}
+
+    /* .sam-item div
+    {display: flex;
+    flex-direction: column;} */
 
     .sam-button
     {background-color: var(--secondary-color);
