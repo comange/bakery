@@ -22,13 +22,11 @@ margin: 0px;}
 section
 {margin: 0px;}
 
-ol > li
-{list-style: inherit;}
-
     a,
     li,
     p,
-    ul
+    ul,
+    ol
     {text-decoration: none;
     list-style: none;}
 
@@ -48,8 +46,13 @@ ol > li
 
 header
 {background-image: url(./image/background/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 1335px;
-    height: 1025px;}
+    height: 1025px;
+padding-top: 50px;
+padding-left: 85px;}
 
 nav
 {font-weight: 140;
@@ -109,7 +112,7 @@ text {
 .sam-list {
     display: flex;
     justify-content: space-around; 
-    margin-top: 185px;
+    margin-top: 140px;
 }
 
 
@@ -282,7 +285,12 @@ text {
 .quality
 {    width: 1335px;
     height: 850px;
-    background-color: var(--background-color);}
+    background-color: var(--background-color);
+    background-image: url(./image/background/quality-bg/text.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 6;
+}
 
 
 .quality h2 {
@@ -291,18 +299,101 @@ text {
     text-align: center;
     font-weight: 400;
     font-family: 'Italiana';
+    padding-top: 70px;
+    margin: 0px;
+    position: relative;
+    left: 115px;
+    z-index: 7;
 }
 
 
-    .q-list
-    {display: flex;
-    flex-direction: row;}
+/* .quality img {
+    width: 300px;
+    height: 150px;
+} */
 
-    .o-list
-    {background: #F2F2F24D;
-        width: 292px;
-height: 198px;}
 
+ .middle {
+    width: inherit;
+    height: 700px;
+    z-index: 6;
+    position: absolute;
+    left: 27px;
+    background: url(./image/background/quality-bg/text1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+} 
+
+
+.right {
+    width: inherit;
+    height: 700px;
+    z-index: 6;
+    position: absolute;
+    left: 110px;
+    background: url(./image/background/quality-bg/text2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    color: #FFFFFF;
+}
+
+
+.q-list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 700px;
+    padding-left: 120px;
+    margin: 0px;
+    z-index: 7;
+}
+
+
+.q-item {
+    position: inherit;
+    z-index: 7;
+}
+
+
+.q-item:nth-child(1) {
+    position: relative;
+    bottom: 58px;
+}
+
+
+.q-item:nth-child(2) {
+    margin-left: 15px;
+    position: relative;
+    top: 25px;
+}
+
+
+.q-item:nth-child(3) {
+    margin-left: 50px;
+    position: relative;
+    top: 75px;
+}
+
+
+.o-list {
+    background: rgb(126, 121, 121);
+    width: 292px;
+    height: 198px;
+    /* display: flex;
+    justify-content: center; */
+    padding-left: 10px;
+    padding-top: 25px;
+    z-index: 7;
+}
+
+
+.o-text {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+}
 
 /*Artisax*/
 
@@ -395,21 +486,27 @@ margin-top: 0px;}
 
 
  .how-cont {
-    padding-left: 140px;
+    margin-left: 140px;
     text-align: left;
 } 
 
 
 .when-cont {
-    padding-left: 100px;
+    margin-left: 100px;
     text-align: left;
+    margin-right: 110px;
+}
+
+
+.where-text {
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+
 }
 
 
 .map {
-    /* margin-top: 35px;
-    margin-bottom: 35px;*/
-    margin-left: 138px; 
     width: 535px;
     height: 487px;
 }
